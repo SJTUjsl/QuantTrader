@@ -1,0 +1,10 @@
+^D:\DOCUMENTS\STUDY\量化交易\QUANT-TRADER\CMAKELISTS.TXT
+setlocal
+D:\Program_Files\CMake\bin\cmake.exe -SD:/Documents/Study/量化交易/quant-trader -BD:/Documents/Study/量化交易/quant-trader/build --check-stamp-file D:/Documents/Study/量化交易/quant-trader/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

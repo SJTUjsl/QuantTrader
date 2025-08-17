@@ -1,0 +1,12 @@
+[2025-08-17 23:56:32] [INFO] Starting data adapter test...
+[2025-08-17 23:56:32] [INFO] MockDataAdapter subscribed to: AAPL
+[2025-08-17 23:56:32] [INFO] MockDataAdapter started
+[2025-08-17 23:56:32] [INFO] Received market data: AAPL Price: 150.904997 Volume: 413479
+[2025-08-17 23:56:33] [INFO] Received market data: AAPL Price: 148.929503 Volume: 634912
+[2025-08-17 23:56:34] [INFO] Received market data: AAPL Price: 148.990936 Volume: 963174
+[2025-08-17 23:56:34] [INFO] Received market data: AAPL Price: 147.669239 Volume: 695427
+[2025-08-17 23:56:35] [INFO] Received market data: AAPL Price: 147.783849 Volume: 731226
+[2025-08-17 23:56:35] [INFO] Received market data: AAPL Price: 146.805060 Volume: 166693
+[2025-08-17 23:56:36] [INFO] MockDataAdapter stopped
+[2025-08-17 23:56:36] [INFO] MockDataAdapter unsubscribed from: AAPL
+[2025-08-17 23:56:36] [INFO] Data adapter test completed

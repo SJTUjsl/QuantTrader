@@ -1,0 +1,11 @@
+[2025-08-17 23:50:08] [INFO] Starting CSV loader test...
+[2025-08-17 23:50:08] [ERROR] Failed to open CSV file: data/storage/sample_data.csv
+[2025-08-17 23:50:08] [ERROR] No data loaded from CSV
+[2025-08-17 23:51:00] [INFO] Starting CSV loader test...
+[2025-08-17 23:51:00] [ERROR] Failed to open CSV file: data/storage/sample_data.csv
+[2025-08-17 23:51:00] [ERROR] No data loaded from CSV
+[2025-08-17 23:51:15] [INFO] Starting CSV loader test...
+[2025-08-17 23:51:15] [INFO] Loading CSV file: backend/data/storage/sample_data.csv
+[2025-08-17 23:51:15] [INFO] Loaded 5 records from CSV
+[2025-08-17 23:51:15] [INFO] Loaded 5 records
+[2025-08-17 23:51:15] [INFO] CSV loader test completed

@@ -1,0 +1,11 @@
+[2025-08-17 23:41:00] [INFO] Registered timer with ID: 1
+[2025-08-17 23:41:00] [INFO] Starting event loop with 1-second timer...
+[2025-08-17 23:41:00] [INFO] Event loop started
+[2025-08-17 23:41:01] [INFO] Timer fired! Count: 1
+[2025-08-17 23:41:02] [INFO] Timer fired! Count: 2
+[2025-08-17 23:41:03] [INFO] Timer fired! Count: 3
+[2025-08-17 23:41:04] [INFO] Timer fired! Count: 4
+[2025-08-17 23:41:05] [INFO] Timer fired! Count: 5
+[2025-08-17 23:41:05] [INFO] Reached 5 iterations, stopping...
+[2025-08-17 23:41:06] [INFO] Event loop stopped
+[2025-08-17 23:41:06] [INFO] Event loop test completed

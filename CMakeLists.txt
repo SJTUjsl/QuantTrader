@@ -72,8 +72,17 @@ add_executable(test-strategy-base
     backend/core/utils/logger.cpp
 )
 
+# 新增MA_RSI策略测试
+add_executable(test-ma-rsi-strategy
+    tests/test_ma_rsi_strategy.cpp
+    backend/strategy/ma_rsi_strategy.cpp
+    backend/strategy/strategy_base.cpp
+    backend/core/utils/logger.cpp
+)
+
 # 链接线程库
 find_package(Threads REQUIRED)
 target_link_libraries(test-event-loop Threads::Threads)
 target_link_libraries(test-data-adapter Threads::Threads)
 target_link_libraries(test-market-data-feed Threads::Threads)
+target_link_libraries(test-ma-rsi-strategy Threads::Threads)

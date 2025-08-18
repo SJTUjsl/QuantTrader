@@ -20,6 +20,9 @@
       <FullPath>D:\Documents\Study\量化交易\quant-trader\build\bin\Debug\test-logger.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
+      <FullPath>D:\Documents\Study\量化交易\quant-trader\build\bin\Debug\test-ma-rsi-strategy.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
       <FullPath>D:\Documents\Study\量化交易\quant-trader\build\bin\Debug\test-market-data-feed.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>

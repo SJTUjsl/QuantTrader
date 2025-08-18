@@ -1,0 +1,5 @@
+D:\Documents\Study\量化交易\quant-trader\tests\test_market_data_feed.cpp;D:\Documents\Study\量化交易\quant-trader\build\test-market-data-feed.dir\Debug\test_market_data_feed.obj
+D:\Documents\Study\量化交易\quant-trader\backend\data\market_data_feed.cpp;D:\Documents\Study\量化交易\quant-trader\build\test-market-data-feed.dir\Debug\market_data_feed.obj
+D:\Documents\Study\量化交易\quant-trader\backend\data\data_adapter.cpp;D:\Documents\Study\量化交易\quant-trader\build\test-market-data-feed.dir\Debug\data_adapter.obj
+D:\Documents\Study\量化交易\quant-trader\backend\core\utils\logger.cpp;D:\Documents\Study\量化交易\quant-trader\build\test-market-data-feed.dir\Debug\logger.obj
+D:\Documents\Study\量化交易\quant-trader\backend\core\message_bus.cpp;D:\Documents\Study\量化交易\quant-trader\build\test-market-data-feed.dir\Debug\message_bus.obj

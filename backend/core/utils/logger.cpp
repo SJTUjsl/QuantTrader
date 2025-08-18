@@ -72,7 +72,12 @@ std::string Logger::level_to_string(LogLevel level) {
 
 std::string Logger::get_current_timestamp() {
     auto now = std::time(nullptr);
-    auto tm = *std::localtime(&now);
+    std::tm tm{};
+    #ifdef _WIN32
+        localtime_s(&tm, &now);
+    #else
+        tm = *std::localtime(&now);
+    #endif
     
     std::ostringstream oss;
     oss << std::put_time(&tm, "%Y-%m-%d %H:%M:%S");

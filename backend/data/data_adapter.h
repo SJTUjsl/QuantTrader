@@ -5,19 +5,7 @@
 #include <memory>
 #include <thread>
 
-struct MarketData {
-    std::string symbol;
-    std::string timestamp;
-    double open;
-    double high;
-    double low;
-    double close;
-    int64_t volume;
-    
-    MarketData() : open(0), high(0), low(0), close(0), volume(0) {}
-    MarketData(const std::string& sym, const std::string& ts, double o, double h, double l, double c, int64_t v)
-        : symbol(sym), timestamp(ts), open(o), high(h), low(l), close(c), volume(v) {}
-};
+#include "../common/market_data.h"
 
 class DataAdapter {
 public:

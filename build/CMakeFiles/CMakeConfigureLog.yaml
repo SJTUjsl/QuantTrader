@@ -1366,3 +1366,180 @@ events:
       Microsoft (R) Incremental Linker Version 14.40.33813.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/Program_Files/CMake/share/cmake-4.1/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "D:/Program_Files/CMake/share/cmake-4.1/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "D:/Program_Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake:97 (check_c_source_compiles)"
+      - "D:/Program_Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "CMakeLists.txt:75 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "D:/Documents/Study/\u91cf\u5316\u4ea4\u6613/quant-trader/build/CMakeFiles/CMakeScratch/TryCompile-be7bak"
+      binary: "D:/Documents/Study/\u91cf\u5316\u4ea4\u6613/quant-trader/build/CMakeFiles/CMakeScratch/TryCompile-be7bak"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Documents/Study/量化交易/quant-trader/build/CMakeFiles/CMakeScratch/TryCompile-be7bak'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_cb4cb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+        鐢熸垚鍚姩鏃堕棿涓?2025/8/18 21:50:33銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淒:\\Documents\\Study\\閲忓寲浜ゆ槗\\quant-trader\\build\\CMakeFiles\\CMakeScratch\\TryCompile-be7bak\\cmTC_cb4cb.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_cb4cb.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淒:\\Documents\\Study\\閲忓寲浜ゆ槗\\quant-trader\\build\\CMakeFiles\\CMakeScratch\\TryCompile-be7bak\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_cb4cb.dir\\Debug\\cmTC_cb4cb.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_cb4cb.dir\\Debug\\cmTC_cb4cb.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_cb4cb.dir\\Debug\\cmTC_cb4cb.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_cb4cb.dir\\Debug\\\\" /Fd"cmTC_cb4cb.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Documents\\Study\\閲忓寲浜ゆ槗\\quant-trader\\build\\CMakeFiles\\CMakeScratch\\TryCompile-be7bak\\src.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.40.33813 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_cb4cb.dir\\Debug\\\\" /Fd"cmTC_cb4cb.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Documents\\Study\\閲忓寲浜ゆ槗\\quant-trader\\build\\CMakeFiles\\CMakeScratch\\TryCompile-be7bak\\src.c"
+          src.c
+        D:\\Documents\\Study\\閲忓寲浜ゆ槗\\quant-trader\\build\\CMakeFiles\\CMakeScratch\\TryCompile-be7bak\\src.c(1,10): error C1083: 鏃犳硶鎵撳紑鍖呮嫭鏂囦欢: 鈥減thread.h鈥? No such file or directory [D:\\Documents\\Study\\閲忓寲浜ゆ槗\\quant-trader\\build\\CMakeFiles\\CMakeScratch\\TryCompile-be7bak\\cmTC_cb4cb.vcxproj]
+        宸插畬鎴愮敓鎴愰」鐩€淒:\\Documents\\Study\\閲忓寲浜ゆ槗\\quant-trader\\build\\CMakeFiles\\CMakeScratch\\TryCompile-be7bak\\cmTC_cb4cb.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
+        
+        鐢熸垚澶辫触銆?
+        
+        鈥淒:\\Documents\\Study\\閲忓寲浜ゆ槗\\quant-trader\\build\\CMakeFiles\\CMakeScratch\\TryCompile-be7bak\\cmTC_cb4cb.vcxproj鈥?榛樿鐩爣) (1) ->
+        (ClCompile 鐩爣) -> 
+          D:\\Documents\\Study\\閲忓寲浜ゆ槗\\quant-trader\\build\\CMakeFiles\\CMakeScratch\\TryCompile-be7bak\\src.c(1,10): error C1083: 鏃犳硶鎵撳紑鍖呮嫭鏂囦欢: 鈥減thread.h鈥? No such file or directory [D:\\Documents\\Study\\閲忓寲浜ゆ槗\\quant-trader\\build\\CMakeFiles\\CMakeScratch\\TryCompile-be7bak\\cmTC_cb4cb.vcxproj]
+        
+            0 涓鍛?
+            1 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:00.48
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/Program_Files/CMake/share/cmake-4.1/Modules/CheckLibraryExists.cmake:154 (try_compile)"
+      - "D:/Program_Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake:112 (check_library_exists)"
+      - "D:/Program_Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "CMakeLists.txt:75 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "D:/Documents/Study/\u91cf\u5316\u4ea4\u6613/quant-trader/build/CMakeFiles/CMakeScratch/TryCompile-6x91i9"
+      binary: "D:/Documents/Study/\u91cf\u5316\u4ea4\u6613/quant-trader/build/CMakeFiles/CMakeScratch/TryCompile-6x91i9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Documents/Study/量化交易/quant-trader/build/CMakeFiles/CMakeScratch/TryCompile-6x91i9'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_bda90.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+        鐢熸垚鍚姩鏃堕棿涓?2025/8/18 21:50:33銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淒:\\Documents\\Study\\閲忓寲浜ゆ槗\\quant-trader\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6x91i9\\cmTC_bda90.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_bda90.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淒:\\Documents\\Study\\閲忓寲浜ゆ槗\\quant-trader\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6x91i9\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_bda90.dir\\Debug\\cmTC_bda90.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_bda90.dir\\Debug\\cmTC_bda90.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_bda90.dir\\Debug\\cmTC_bda90.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_bda90.dir\\Debug\\\\" /Fd"cmTC_bda90.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Documents\\Study\\閲忓寲浜ゆ槗\\quant-trader\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6x91i9\\CheckFunctionExists.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.40.33813 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_bda90.dir\\Debug\\\\" /Fd"cmTC_bda90.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Documents\\Study\\閲忓寲浜ゆ槗\\quant-trader\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6x91i9\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Documents\\Study\\閲忓寲浜ゆ槗\\quant-trader\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6x91i9\\Debug\\cmTC_bda90.exe" /INCREMENTAL /ILK:"cmTC_bda90.dir\\Debug\\cmTC_bda90.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Documents/Study/閲忓寲浜ゆ槗/quant-trader/build/CMakeFiles/CMakeScratch/TryCompile-6x91i9/Debug/cmTC_bda90.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Documents/Study/閲忓寲浜ゆ槗/quant-trader/build/CMakeFiles/CMakeScratch/TryCompile-6x91i9/Debug/cmTC_bda90.lib" /MACHINE:X64  /machine:x64 cmTC_bda90.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: 鏃犳硶鎵撳紑鏂囦欢鈥減threads.lib鈥?[D:\\Documents\\Study\\閲忓寲浜ゆ槗\\quant-trader\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6x91i9\\cmTC_bda90.vcxproj]
+        宸插畬鎴愮敓鎴愰」鐩€淒:\\Documents\\Study\\閲忓寲浜ゆ槗\\quant-trader\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6x91i9\\cmTC_bda90.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
+        
+        鐢熸垚澶辫触銆?
+        
+        鈥淒:\\Documents\\Study\\閲忓寲浜ゆ槗\\quant-trader\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6x91i9\\cmTC_bda90.vcxproj鈥?榛樿鐩爣) (1) ->
+        (Link 鐩爣) -> 
+          LINK : fatal error LNK1104: 鏃犳硶鎵撳紑鏂囦欢鈥減threads.lib鈥?[D:\\Documents\\Study\\閲忓寲浜ゆ槗\\quant-trader\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6x91i9\\cmTC_bda90.vcxproj]
+        
+            0 涓鍛?
+            1 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:00.41
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/Program_Files/CMake/share/cmake-4.1/Modules/CheckLibraryExists.cmake:154 (try_compile)"
+      - "D:/Program_Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake:112 (check_library_exists)"
+      - "D:/Program_Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "CMakeLists.txt:75 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "D:/Documents/Study/\u91cf\u5316\u4ea4\u6613/quant-trader/build/CMakeFiles/CMakeScratch/TryCompile-oumpbc"
+      binary: "D:/Documents/Study/\u91cf\u5316\u4ea4\u6613/quant-trader/build/CMakeFiles/CMakeScratch/TryCompile-oumpbc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Documents/Study/量化交易/quant-trader/build/CMakeFiles/CMakeScratch/TryCompile-oumpbc'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_664a6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+        鐢熸垚鍚姩鏃堕棿涓?2025/8/18 21:50:34銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淒:\\Documents\\Study\\閲忓寲浜ゆ槗\\quant-trader\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oumpbc\\cmTC_664a6.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_664a6.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淒:\\Documents\\Study\\閲忓寲浜ゆ槗\\quant-trader\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oumpbc\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_664a6.dir\\Debug\\cmTC_664a6.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_664a6.dir\\Debug\\cmTC_664a6.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_664a6.dir\\Debug\\cmTC_664a6.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_664a6.dir\\Debug\\\\" /Fd"cmTC_664a6.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Documents\\Study\\閲忓寲浜ゆ槗\\quant-trader\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oumpbc\\CheckFunctionExists.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.40.33813 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_664a6.dir\\Debug\\\\" /Fd"cmTC_664a6.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Documents\\Study\\閲忓寲浜ゆ槗\\quant-trader\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oumpbc\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Documents\\Study\\閲忓寲浜ゆ槗\\quant-trader\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oumpbc\\Debug\\cmTC_664a6.exe" /INCREMENTAL /ILK:"cmTC_664a6.dir\\Debug\\cmTC_664a6.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Documents/Study/閲忓寲浜ゆ槗/quant-trader/build/CMakeFiles/CMakeScratch/TryCompile-oumpbc/Debug/cmTC_664a6.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Documents/Study/閲忓寲浜ゆ槗/quant-trader/build/CMakeFiles/CMakeScratch/TryCompile-oumpbc/Debug/cmTC_664a6.lib" /MACHINE:X64  /machine:x64 cmTC_664a6.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: 鏃犳硶鎵撳紑鏂囦欢鈥減thread.lib鈥?[D:\\Documents\\Study\\閲忓寲浜ゆ槗\\quant-trader\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oumpbc\\cmTC_664a6.vcxproj]
+        宸插畬鎴愮敓鎴愰」鐩€淒:\\Documents\\Study\\閲忓寲浜ゆ槗\\quant-trader\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oumpbc\\cmTC_664a6.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
+        
+        鐢熸垚澶辫触銆?
+        
+        鈥淒:\\Documents\\Study\\閲忓寲浜ゆ槗\\quant-trader\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oumpbc\\cmTC_664a6.vcxproj鈥?榛樿鐩爣) (1) ->
+        (Link 鐩爣) -> 
+          LINK : fatal error LNK1104: 鏃犳硶鎵撳紑鏂囦欢鈥減thread.lib鈥?[D:\\Documents\\Study\\閲忓寲浜ゆ槗\\quant-trader\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oumpbc\\cmTC_664a6.vcxproj]
+        
+            0 涓鍛?
+            1 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:00.38
+        
+      exitCode: 1
+...

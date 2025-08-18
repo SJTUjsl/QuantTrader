@@ -1,4 +1,10 @@
 D:/Documents/Study/量化交易/quant-trader/build/CMakeFiles/quant-trading-system.dir
-D:/Documents/Study/量化交易/quant-trader/build/CMakeFiles/empty-test.dir
+D:/Documents/Study/量化交易/quant-trader/build/CMakeFiles/test-logger.dir
+D:/Documents/Study/量化交易/quant-trader/build/CMakeFiles/test-event-loop.dir
+D:/Documents/Study/量化交易/quant-trader/build/CMakeFiles/test-message-bus.dir
+D:/Documents/Study/量化交易/quant-trader/build/CMakeFiles/test-csv-loader.dir
+D:/Documents/Study/量化交易/quant-trader/build/CMakeFiles/test-data-adapter.dir
+D:/Documents/Study/量化交易/quant-trader/build/CMakeFiles/test-market-data-feed.dir
+D:/Documents/Study/量化交易/quant-trader/build/CMakeFiles/test-strategy-base.dir
 D:/Documents/Study/量化交易/quant-trader/build/CMakeFiles/ALL_BUILD.dir
 D:/Documents/Study/量化交易/quant-trader/build/CMakeFiles/ZERO_CHECK.dir

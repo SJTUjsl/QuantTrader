@@ -3,8 +3,7 @@
 #include <ctime>
 
 StrategyBase::StrategyBase(const std::string& name) 
-    : name_(name), active_(false), 
-      current_data_(), current_position_() {
+    : name_(name), active_(false) {
     Logger::get_instance().info("Strategy " + name + " created");
 }
 
@@ -22,6 +21,5 @@ double StrategyBase::calculate_returns() const {
     if (current_position_.quantity <= 0 || current_position_.average_price <= 0) {
         return 0.0;
     }
-    
     return (current_data_.close - current_position_.average_price) / current_position_.average_price;
 }

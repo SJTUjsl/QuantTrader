@@ -2,7 +2,7 @@
 #include "data_adapter.h"
 #include "../core/utils/logger.h"
 
-// 使用简单字符串代替json库
+// Simple JSON utility
 class SimpleJson {
 public:
     static std::string market_data_to_json(const MarketData& data) {
@@ -60,12 +60,10 @@ void MarketDataFeed::stop() {
 }
 
 void MarketDataFeed::on_data_received(const MarketData& data) {
-    // 记录接收到的数据
-    Logger::get_instance().info("MarketDataFeed received: " + data.symbol + 
-                               " @ " + std::to_string(data.close) + 
+    Logger::get_instance().info("MarketDataFeed received: " + data.symbol +
+                               " @ " + std::to_string(data.close) +
                                " Volume: " + std::to_string(data.volume));
     
-    // 通过消息总线分发
     publish_to_bus(data);
 }
 

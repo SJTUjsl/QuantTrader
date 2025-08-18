@@ -1,9 +1,9 @@
 #pragma once
 
-#include "../data/data_adapter.h"
 #include <string>
 #include <vector>
 #include <memory>
+#include "../common/market_data.h"
 
 enum class SignalType {
     BUY,
@@ -39,19 +39,15 @@ public:
     StrategyBase(const std::string& name);
     virtual ~StrategyBase() = default;
     
-    // 策略核心接口
     virtual void on_bar(const MarketData& data) = 0;
     virtual Signal generate_signal() = 0;
     
-    // 数据管理
     void update_market_data(const MarketData& data);
     void update_position(const Position& position);
     
-    // 策略配置
     virtual void init() = 0;
     virtual void reset() = 0;
     
-    // 获取策略信息
     const std::string& get_name() const { return name_; }
     bool is_active() const { return active_; }
     void set_active(bool active) { active_ = active; }
@@ -60,11 +56,9 @@ protected:
     std::string name_;
     bool active_;
     
-    // 当前状态
     MarketData current_data_;
     Position current_position_;
     
-    // 工具方法
     double calculate_returns() const;
     bool has_position() const { return current_position_.quantity > 0; }
 };

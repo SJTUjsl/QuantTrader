@@ -94,6 +94,14 @@ add_executable(test-order-manager
     backend/core/utils/logger.cpp
 )
 
+# 新增风控管理器测试
+add_executable(test-risk-manager
+    tests/test_risk_manager.cpp
+    backend/risk/risk_manager.cpp
+    backend/execution/order_manager.cpp
+    backend/core/utils/logger.cpp
+)
+
 # 链接线程库
 find_package(Threads REQUIRED)
 target_link_libraries(test-event-loop Threads::Threads)
@@ -102,3 +110,4 @@ target_link_libraries(test-market-data-feed Threads::Threads)
 target_link_libraries(test-ma-rsi-strategy Threads::Threads)
 target_link_libraries(test-multi-period Threads::Threads)
 target_link_libraries(test-order-manager Threads::Threads)
+target_link_libraries(test-risk-manager Threads::Threads)

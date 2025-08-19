@@ -3,9 +3,6 @@
   <PropertyGroup>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
   </PropertyGroup>
-  <PropertyGroup>
-    <ResolveNugetPackages>false</ResolveNugetPackages>
-  </PropertyGroup>
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|x64">
       <Configuration>Debug</Configuration>
@@ -25,31 +22,31 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{F689B2A1-D469-34D1-BA38-91FEDE8BDA16}</ProjectGuid>
+    <ProjectGuid>{2AD65BF6-FD50-3A5F-8E9D-5012FD2CA79F}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
-    <ProjectName>ALL_BUILD</ProjectName>
+    <ProjectName>test-risk-manager</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
@@ -62,12 +59,59 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Documents\Study\量化交易\quant-trader\build\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">test-risk-manager.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">test-risk-manager</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Documents\Study\量化交易\quant-trader\build\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">test-risk-manager.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">test-risk-manager</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Documents\Study\量化交易\quant-trader\build\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">test-risk-manager.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">test-risk-manager</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Documents\Study\量化交易\quant-trader\build\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">test-risk-manager.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">test-risk-manager</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Documents\Study\量化交易\quant-trader\backend;D:\Documents\Study\量化交易\quant-trader\backend\core;D:\Documents\Study\量化交易\quant-trader\backend\core\utils;D:\Documents\Study\量化交易\quant-trader\backend\data;D:\Documents\Study\量化交易\quant-trader\backend\strategy;D:\Documents\Study\量化交易\quant-trader\backend\execution;D:\Documents\Study\量化交易\quant-trader\backend\risk;D:\Documents\Study\量化交易\quant-trader\backend\portfolio;D:\Documents\Study\量化交易\quant-trader\backend\reporting;D:\Documents\Study\量化交易\quant-trader\backend\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Documents\Study\量化交易\quant-trader\backend;D:\Documents\Study\量化交易\quant-trader\backend\core;D:\Documents\Study\量化交易\quant-trader\backend\core\utils;D:\Documents\Study\量化交易\quant-trader\backend\data;D:\Documents\Study\量化交易\quant-trader\backend\strategy;D:\Documents\Study\量化交易\quant-trader\backend\execution;D:\Documents\Study\量化交易\quant-trader\backend\risk;D:\Documents\Study\量化交易\quant-trader\backend\portfolio;D:\Documents\Study\量化交易\quant-trader\backend\reporting;D:\Documents\Study\量化交易\quant-trader\backend\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
     <Midl>
       <AdditionalIncludeDirectories>D:\Documents\Study\量化交易\quant-trader\backend;D:\Documents\Study\量化交易\quant-trader\backend\core;D:\Documents\Study\量化交易\quant-trader\backend\core\utils;D:\Documents\Study\量化交易\quant-trader\backend\data;D:\Documents\Study\量化交易\quant-trader\backend\strategy;D:\Documents\Study\量化交易\quant-trader\backend\execution;D:\Documents\Study\量化交易\quant-trader\backend\risk;D:\Documents\Study\量化交易\quant-trader\backend\portfolio;D:\Documents\Study\量化交易\quant-trader\backend\reporting;D:\Documents\Study\量化交易\quant-trader\backend\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
@@ -76,8 +120,53 @@
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/Documents/Study/量化交易/quant-trader/build/Debug/test-risk-manager.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>D:/Documents/Study/量化交易/quant-trader/build/bin/Debug/test-risk-manager.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Documents\Study\量化交易\quant-trader\backend;D:\Documents\Study\量化交易\quant-trader\backend\core;D:\Documents\Study\量化交易\quant-trader\backend\core\utils;D:\Documents\Study\量化交易\quant-trader\backend\data;D:\Documents\Study\量化交易\quant-trader\backend\strategy;D:\Documents\Study\量化交易\quant-trader\backend\execution;D:\Documents\Study\量化交易\quant-trader\backend\risk;D:\Documents\Study\量化交易\quant-trader\backend\portfolio;D:\Documents\Study\量化交易\quant-trader\backend\reporting;D:\Documents\Study\量化交易\quant-trader\backend\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Documents\Study\量化交易\quant-trader\backend;D:\Documents\Study\量化交易\quant-trader\backend\core;D:\Documents\Study\量化交易\quant-trader\backend\core\utils;D:\Documents\Study\量化交易\quant-trader\backend\data;D:\Documents\Study\量化交易\quant-trader\backend\strategy;D:\Documents\Study\量化交易\quant-trader\backend\execution;D:\Documents\Study\量化交易\quant-trader\backend\risk;D:\Documents\Study\量化交易\quant-trader\backend\portfolio;D:\Documents\Study\量化交易\quant-trader\backend\reporting;D:\Documents\Study\量化交易\quant-trader\backend\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
     <Midl>
       <AdditionalIncludeDirectories>D:\Documents\Study\量化交易\quant-trader\backend;D:\Documents\Study\量化交易\quant-trader\backend\core;D:\Documents\Study\量化交易\quant-trader\backend\core\utils;D:\Documents\Study\量化交易\quant-trader\backend\data;D:\Documents\Study\量化交易\quant-trader\backend\strategy;D:\Documents\Study\量化交易\quant-trader\backend\execution;D:\Documents\Study\量化交易\quant-trader\backend\risk;D:\Documents\Study\量化交易\quant-trader\backend\portfolio;D:\Documents\Study\量化交易\quant-trader\backend\reporting;D:\Documents\Study\量化交易\quant-trader\backend\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
@@ -86,8 +175,53 @@
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/Documents/Study/量化交易/quant-trader/build/Release/test-risk-manager.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>D:/Documents/Study/量化交易/quant-trader/build/bin/Release/test-risk-manager.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Documents\Study\量化交易\quant-trader\backend;D:\Documents\Study\量化交易\quant-trader\backend\core;D:\Documents\Study\量化交易\quant-trader\backend\core\utils;D:\Documents\Study\量化交易\quant-trader\backend\data;D:\Documents\Study\量化交易\quant-trader\backend\strategy;D:\Documents\Study\量化交易\quant-trader\backend\execution;D:\Documents\Study\量化交易\quant-trader\backend\risk;D:\Documents\Study\量化交易\quant-trader\backend\portfolio;D:\Documents\Study\量化交易\quant-trader\backend\reporting;D:\Documents\Study\量化交易\quant-trader\backend\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Documents\Study\量化交易\quant-trader\backend;D:\Documents\Study\量化交易\quant-trader\backend\core;D:\Documents\Study\量化交易\quant-trader\backend\core\utils;D:\Documents\Study\量化交易\quant-trader\backend\data;D:\Documents\Study\量化交易\quant-trader\backend\strategy;D:\Documents\Study\量化交易\quant-trader\backend\execution;D:\Documents\Study\量化交易\quant-trader\backend\risk;D:\Documents\Study\量化交易\quant-trader\backend\portfolio;D:\Documents\Study\量化交易\quant-trader\backend\reporting;D:\Documents\Study\量化交易\quant-trader\backend\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
     <Midl>
       <AdditionalIncludeDirectories>D:\Documents\Study\量化交易\quant-trader\backend;D:\Documents\Study\量化交易\quant-trader\backend\core;D:\Documents\Study\量化交易\quant-trader\backend\core\utils;D:\Documents\Study\量化交易\quant-trader\backend\data;D:\Documents\Study\量化交易\quant-trader\backend\strategy;D:\Documents\Study\量化交易\quant-trader\backend\execution;D:\Documents\Study\量化交易\quant-trader\backend\risk;D:\Documents\Study\量化交易\quant-trader\backend\portfolio;D:\Documents\Study\量化交易\quant-trader\backend\reporting;D:\Documents\Study\量化交易\quant-trader\backend\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
@@ -96,8 +230,52 @@
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/Documents/Study/量化交易/quant-trader/build/MinSizeRel/test-risk-manager.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>D:/Documents/Study/量化交易/quant-trader/build/bin/MinSizeRel/test-risk-manager.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Documents\Study\量化交易\quant-trader\backend;D:\Documents\Study\量化交易\quant-trader\backend\core;D:\Documents\Study\量化交易\quant-trader\backend\core\utils;D:\Documents\Study\量化交易\quant-trader\backend\data;D:\Documents\Study\量化交易\quant-trader\backend\strategy;D:\Documents\Study\量化交易\quant-trader\backend\execution;D:\Documents\Study\量化交易\quant-trader\backend\risk;D:\Documents\Study\量化交易\quant-trader\backend\portfolio;D:\Documents\Study\量化交易\quant-trader\backend\reporting;D:\Documents\Study\量化交易\quant-trader\backend\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Documents\Study\量化交易\quant-trader\backend;D:\Documents\Study\量化交易\quant-trader\backend\core;D:\Documents\Study\量化交易\quant-trader\backend\core\utils;D:\Documents\Study\量化交易\quant-trader\backend\data;D:\Documents\Study\量化交易\quant-trader\backend\strategy;D:\Documents\Study\量化交易\quant-trader\backend\execution;D:\Documents\Study\量化交易\quant-trader\backend\risk;D:\Documents\Study\量化交易\quant-trader\backend\portfolio;D:\Documents\Study\量化交易\quant-trader\backend\reporting;D:\Documents\Study\量化交易\quant-trader\backend\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
     <Midl>
       <AdditionalIncludeDirectories>D:\Documents\Study\量化交易\quant-trader\backend;D:\Documents\Study\量化交易\quant-trader\backend\core;D:\Documents\Study\量化交易\quant-trader\backend\core\utils;D:\Documents\Study\量化交易\quant-trader\backend\data;D:\Documents\Study\量化交易\quant-trader\backend\strategy;D:\Documents\Study\量化交易\quant-trader\backend\execution;D:\Documents\Study\量化交易\quant-trader\backend\risk;D:\Documents\Study\量化交易\quant-trader\backend\portfolio;D:\Documents\Study\量化交易\quant-trader\backend\reporting;D:\Documents\Study\量化交易\quant-trader\backend\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
@@ -106,6 +284,23 @@
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/Documents/Study/量化交易/quant-trader/build/RelWithDebInfo/test-risk-manager.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>D:/Documents/Study/量化交易/quant-trader/build/bin/RelWithDebInfo/test-risk-manager.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
     <CustomBuild Include="D:\Documents\Study\量化交易\quant-trader\CMakeLists.txt">
@@ -165,6 +360,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="D:\Documents\Study\量化交易\quant-trader\tests\test_risk_manager.cpp" />
+    <ClCompile Include="D:\Documents\Study\量化交易\quant-trader\backend\risk\risk_manager.cpp" />
+    <ClCompile Include="D:\Documents\Study\量化交易\quant-trader\backend\execution\order_manager.cpp" />
+    <ClCompile Include="D:\Documents\Study\量化交易\quant-trader\backend\core\utils\logger.cpp" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -173,54 +372,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </ProjectReference>
-    <ProjectReference Include="D:\Documents\Study\量化交易\quant-trader\build\quant-trading-system.vcxproj">
-      <Project>{A745C4E0-A2F6-365A-86C1-5E1407BF930C}</Project>
-      <Name>quant-trading-system</Name>
-    </ProjectReference>
-    <ProjectReference Include="D:\Documents\Study\量化交易\quant-trader\build\test-csv-loader.vcxproj">
-      <Project>{97ABD57C-9058-3A24-9D40-04C00C749BFD}</Project>
-      <Name>test-csv-loader</Name>
-    </ProjectReference>
-    <ProjectReference Include="D:\Documents\Study\量化交易\quant-trader\build\test-data-adapter.vcxproj">
-      <Project>{BB694B2A-3F9A-3AAB-A6C1-AD1A58E89B9D}</Project>
-      <Name>test-data-adapter</Name>
-    </ProjectReference>
-    <ProjectReference Include="D:\Documents\Study\量化交易\quant-trader\build\test-event-loop.vcxproj">
-      <Project>{61A04877-6C03-3522-BC9B-64922004FBEC}</Project>
-      <Name>test-event-loop</Name>
-    </ProjectReference>
-    <ProjectReference Include="D:\Documents\Study\量化交易\quant-trader\build\test-logger.vcxproj">
-      <Project>{99BFA4C3-A3C1-37E5-93A2-66C7D42AE205}</Project>
-      <Name>test-logger</Name>
-    </ProjectReference>
-    <ProjectReference Include="D:\Documents\Study\量化交易\quant-trader\build\test-ma-rsi-strategy.vcxproj">
-      <Project>{4884765E-ABBC-35A3-87C9-9F64B6E0DCE9}</Project>
-      <Name>test-ma-rsi-strategy</Name>
-    </ProjectReference>
-    <ProjectReference Include="D:\Documents\Study\量化交易\quant-trader\build\test-market-data-feed.vcxproj">
-      <Project>{CD07A4FB-64F4-3780-81E6-213D4CCC5EE6}</Project>
-      <Name>test-market-data-feed</Name>
-    </ProjectReference>
-    <ProjectReference Include="D:\Documents\Study\量化交易\quant-trader\build\test-message-bus.vcxproj">
-      <Project>{6A17FEEF-E8FD-37FE-969B-A4CB45A3F488}</Project>
-      <Name>test-message-bus</Name>
-    </ProjectReference>
-    <ProjectReference Include="D:\Documents\Study\量化交易\quant-trader\build\test-multi-period.vcxproj">
-      <Project>{6AC2DCDB-3406-33CA-9B48-723FE21AC8CB}</Project>
-      <Name>test-multi-period</Name>
-    </ProjectReference>
-    <ProjectReference Include="D:\Documents\Study\量化交易\quant-trader\build\test-order-manager.vcxproj">
-      <Project>{762EF296-DF42-3677-9B0F-2D66129444FA}</Project>
-      <Name>test-order-manager</Name>
-    </ProjectReference>
-    <ProjectReference Include="D:\Documents\Study\量化交易\quant-trader\build\test-risk-manager.vcxproj">
-      <Project>{2AD65BF6-FD50-3A5F-8E9D-5012FD2CA79F}</Project>
-      <Name>test-risk-manager</Name>
-    </ProjectReference>
-    <ProjectReference Include="D:\Documents\Study\量化交易\quant-trader\build\test-strategy-base.vcxproj">
-      <Project>{6D0E5148-DC81-344F-B914-031F4537AF19}</Project>
-      <Name>test-strategy-base</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

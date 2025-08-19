@@ -7,5 +7,7 @@ D:/Documents/Study/量化交易/quant-trader/build/CMakeFiles/test-data-adapter.
 D:/Documents/Study/量化交易/quant-trader/build/CMakeFiles/test-market-data-feed.dir
 D:/Documents/Study/量化交易/quant-trader/build/CMakeFiles/test-strategy-base.dir
 D:/Documents/Study/量化交易/quant-trader/build/CMakeFiles/test-ma-rsi-strategy.dir
+D:/Documents/Study/量化交易/quant-trader/build/CMakeFiles/test-multi-period.dir
+D:/Documents/Study/量化交易/quant-trader/build/CMakeFiles/test-order-manager.dir
 D:/Documents/Study/量化交易/quant-trader/build/CMakeFiles/ALL_BUILD.dir
 D:/Documents/Study/量化交易/quant-trader/build/CMakeFiles/ZERO_CHECK.dir

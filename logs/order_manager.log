@@ -1,0 +1,17 @@
+[2025-08-19 22:15:08] [INFO] OrderManager initialized
+[2025-08-19 22:15:08] [INFO] Order created from signal: {
+  "id": "ORD9854",
+  "symbol": "AAPL",
+  "side": "BUY",
+  "type": "MARKET",
+  "quantity": 100,
+  "price": 150.00
+}
+[2025-08-19 22:15:08] [INFO] Order created from signal: {
+  "id": "ORD5570",
+  "symbol": "AAPL",
+  "side": "SELL",
+  "type": "MARKET",
+  "quantity": 50,
+  "price": 155.00
+}

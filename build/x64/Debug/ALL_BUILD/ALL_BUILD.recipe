@@ -29,6 +29,12 @@
       <FullPath>D:\Documents\Study\量化交易\quant-trader\build\bin\Debug\test-message-bus.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
+      <FullPath>D:\Documents\Study\量化交易\quant-trader\build\bin\Debug\test-multi-period.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Documents\Study\量化交易\quant-trader\build\bin\Debug\test-order-manager.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
       <FullPath>D:\Documents\Study\量化交易\quant-trader\build\bin\Debug\test-strategy-base.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>

@@ -80,9 +80,25 @@ add_executable(test-ma-rsi-strategy
     backend/core/utils/logger.cpp
 )
 
+# 新增多周期联动测试
+add_executable(test-multi-period
+    tests/test_multi_period.cpp
+    backend/data/timeframe_manager.cpp
+    backend/core/utils/logger.cpp
+)
+
+# 新增订单管理器测试
+add_executable(test-order-manager
+    tests/test_order_manager.cpp
+    backend/execution/order_manager.cpp
+    backend/core/utils/logger.cpp
+)
+
 # 链接线程库
 find_package(Threads REQUIRED)
 target_link_libraries(test-event-loop Threads::Threads)
 target_link_libraries(test-data-adapter Threads::Threads)
 target_link_libraries(test-market-data-feed Threads::Threads)
 target_link_libraries(test-ma-rsi-strategy Threads::Threads)
+target_link_libraries(test-multi-period Threads::Threads)
+target_link_libraries(test-order-manager Threads::Threads)

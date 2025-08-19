@@ -12,33 +12,27 @@ int main() {
     MA_RSI_Strategy strategy(20, 30.0);
     strategy.init();
     
-    // Test data: simulated price series
+    // Test data: simulated price series with sufficient data for indicators
     std::vector<MarketData> test_data;
-    test_data.push_back(MarketData("AAPL", "2024-01-01 09:30:00", 100.0, 101.0, 99.0, 100.0, 1000000));
-    test_data.push_back(MarketData("AAPL", "2024-01-01 09:31:00", 100.0, 102.0, 99.5, 101.5, 1200000));
-    test_data.push_back(MarketData("AAPL", "2024-01-01 09:32:00", 101.5, 103.0, 101.0, 102.5, 900000));
-    test_data.push_back(MarketData("AAPL", "2024-01-01 09:33:00", 102.5, 104.0, 102.0, 103.5, 1100000));
-    test_data.push_back(MarketData("AAPL", "2024-01-01 09:34:00", 103.5, 105.0, 103.0, 104.5, 1300000));
-    test_data.push_back(MarketData("AAPL", "2024-01-01 09:35:00", 104.5, 106.0, 104.0, 105.5, 1000000));
-    test_data.push_back(MarketData("AAPL", "2024-01-01 09:36:00", 105.5, 107.0, 105.0, 106.5, 1400000));
-    test_data.push_back(MarketData("AAPL", "2024-01-01 09:37:00", 106.5, 108.0, 106.0, 107.5, 1200000));
-    test_data.push_back(MarketData("AAPL", "2024-01-01 09:38:00", 107.5, 109.0, 107.0, 108.5, 1500000));
-    test_data.push_back(MarketData("AAPL", "2024-01-01 09:39:00", 108.5, 110.0, 108.0, 109.5, 1100000));
-    test_data.push_back(MarketData("AAPL", "2024-01-01 09:40:00", 109.5, 111.0, 109.0, 110.5, 1300000));
-    test_data.push_back(MarketData("AAPL", "2024-01-01 09:41:00", 110.5, 112.0, 110.0, 111.5, 1000000));
-    test_data.push_back(MarketData("AAPL", "2024-01-01 09:42:00", 111.5, 113.0, 111.0, 112.5, 1200000));
-    test_data.push_back(MarketData("AAPL", "2024-01-01 09:43:00", 112.5, 114.0, 112.0, 113.5, 1400000));
-    test_data.push_back(MarketData("AAPL", "2024-01-01 09:44:00", 113.5, 115.0, 113.0, 114.5, 1100000));
-    test_data.push_back(MarketData("AAPL", "2024-01-01 09:45:00", 114.5, 116.0, 114.0, 115.5, 1300000));
-    test_data.push_back(MarketData("AAPL", "2024-01-01 09:46:00", 115.5, 117.0, 115.0, 116.5, 1500000));
-    test_data.push_back(MarketData("AAPL", "2024-01-01 09:47:00", 116.5, 118.0, 116.0, 117.5, 1200000));
-    test_data.push_back(MarketData("AAPL", "2024-01-01 09:48:00", 117.5, 119.0, 117.0, 118.5, 1000000));
-    test_data.push_back(MarketData("AAPL", "2024-01-01 09:49:00", 118.5, 120.0, 118.0, 119.5, 1400000));
-    test_data.push_back(MarketData("AAPL", "2024-01-01 09:50:00", 119.5, 121.0, 119.0, 120.5, 1100000));
-    test_data.push_back(MarketData("AAPL", "2024-01-01 09:51:00", 120.5, 122.0, 120.0, 121.5, 1300000));
-    test_data.push_back(MarketData("AAPL", "2024-01-01 09:52:00", 121.5, 123.0, 121.0, 122.5, 1500000));
-    test_data.push_back(MarketData("AAPL", "2024-01-01 09:53:00", 122.5, 124.0, 122.0, 123.5, 1200000));
-    test_data.push_back(MarketData("AAPL", "2024-01-01 09:54:00", 123.5, 125.0, 123.0, 124.5, 1400000));
+    
+    // Generate 50 data points for proper indicator calculation
+    double base_price = 100.0;
+    for (int i = 0; i < 50; ++i) {
+        // Create trending data with some volatility
+        double trend = 0.5 * i; // Upward trend
+        double volatility = (rand() % 20 - 10) * 0.1; // Random volatility
+        double close = base_price + trend + volatility;
+        
+        std::string timestamp = "2024-01-01 09:" + std::to_string(30 + i / 60) + ":" + std::to_string(i % 60);
+        if ((i % 60) < 10) timestamp += "0";
+        timestamp = "2024-01-01 09:" + std::to_string(30 + i / 60) + ":" + std::to_string(i % 60);
+        if ((i % 60) < 10) timestamp.insert(timestamp.length() - 1, "0");
+        
+        test_data.push_back(MarketData("AAPL", 
+                                      "2024-01-01 09:" + std::to_string(30 + i / 60) + ":" + 
+                                      ((i % 60 < 10) ? "0" + std::to_string(i % 60) : std::to_string(i % 60)),
+                                      close - 1.0, close + 1.0, close - 0.5, close, 1000000 + i * 10000));
+    }
     
     std::cout << "Testing MA RSI Strategy with " << test_data.size() << " data points..." << std::endl;
     
@@ -47,8 +41,8 @@ int main() {
         strategy.update_market_data(test_data[i]);
         strategy.on_bar(test_data[i]);
         
-        // Generate signal every 5 data points
-        if ((i + 1) % 5 == 0 || i == test_data.size() - 1) {
+        // Generate signal for last 10 data points when we have sufficient data
+        if (i >= 34 && (i + 1) % 3 == 0) {
             Signal signal = strategy.generate_signal();
             
             std::cout << "Signal " << (i + 1) << ": ";

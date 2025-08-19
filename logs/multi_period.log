@@ -1,0 +1,15 @@
+[2025-08-19 21:43:11] [INFO] Starting multi-period linkage test...
+[2025-08-19 21:43:11] [INFO] TimeFrameManager initialized
+[2025-08-19 21:43:11] [INFO] Registered timeframe 1s for symbol AAPL
+[2025-08-19 21:43:11] [INFO] Registered timeframe 60s for symbol AAPL
+[2025-08-19 21:43:11] [INFO] Multi-period linkage test completed
+[2025-08-19 21:49:04] [INFO] Starting multi-period linkage test...
+[2025-08-19 21:49:04] [INFO] TimeFrameManager initialized
+[2025-08-19 21:49:04] [INFO] Registered timeframe 1s for symbol AAPL
+[2025-08-19 21:49:04] [INFO] Registered timeframe 60s for symbol AAPL
+[2025-08-19 21:49:04] [INFO] Multi-period linkage test completed
+[2025-08-19 21:52:09] [INFO] Starting multi-period linkage test...
+[2025-08-19 21:52:09] [INFO] TimeFrameManager initialized
+[2025-08-19 21:52:09] [INFO] Registered timeframe 1s for symbol AAPL
+[2025-08-19 21:52:09] [INFO] Registered timeframe 60s for symbol AAPL
+[2025-08-19 21:52:09] [INFO] Multi-period linkage test completed
